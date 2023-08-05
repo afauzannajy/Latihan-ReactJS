@@ -1,0 +1,55 @@
+section {
+  padding-top: 6rem;
+}
+
+section:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+
+.jumbotron-bg {
+  background-image: url("../img/jumbotron.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.jumbotron img,
+#projects .card {
+  box-shadow: 0 0 10px black;
+}
+
+.jumbotron > * {
+  font-weight: 350;
+  text-shadow: 0 0 5px black;
+}
+
+#projects h2 {
+  text-shadow: 0 0 5px black;
+}
+
+#about p,
+#projects p {
+  text-align: justify;
+}
+
+#about p {
+  text-indent: 2.5rem;
+}
+
+#contact :is(input, textarea, :is(:focus)):invalid {
+  border: 1px solid #e25242;
+  outline: none;
+}
+
+#contact :is(input, textarea, :is(:focus)):invalid ~ .alert {
+  display: unset;
+}
+
+#contact .alert {
+  display: none;
+  color: #e25242;
+  /* font-size: min(1rem, 2.3vw); */
+  margin-left: -10px;
+  font-size: 13px;
+  font-weight: 500;
+}
