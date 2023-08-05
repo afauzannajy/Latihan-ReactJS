@@ -217,7 +217,8 @@ function Contacts() {
               className="alert alert-dark alert-dismissible formAlert d-none"
               role="alert"
             >
-              <strong>Terima kasih!</strong> Pesan anda berhasil dikirim.
+              <strong>Thanks!</strong> Your message has been successfully
+              sent.
               <button
                 type="button"
                 className="btn-close"
@@ -240,7 +241,7 @@ function Contacts() {
                   pattern="[A-Za-z\s']{2,}"
                   required
                 />
-                <p className="alert">Mohon masukkan nama.</p>
+                <p className="alert">This field is required.</p>
               </div>
               <div className="mb-3">
                 <label for="email" className="form-label">
@@ -255,7 +256,7 @@ function Contacts() {
                   placeholder="Please enter your email address..."
                   required
                 />
-                <p className="alert">Email tidak valid.</p>
+                <p className="alert">Invalid email address.</p>
               </div>
               <div className="mb-3">
                 <label for="message" className="form-label">
@@ -269,7 +270,7 @@ function Contacts() {
                   placeholder="Please enter your message..."
                   required
                 ></textarea>
-                <p className="alert">Mohon masukkan pesan.</p>
+                <p className="alert">This field is required.</p>
               </div>
               <button type="submit" className="btn btn-dark btnSubmit">
                 Submit
